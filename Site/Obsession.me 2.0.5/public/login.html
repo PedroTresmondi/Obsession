@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Obsession.me! | Login </title>
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="css/defaultstyle.css">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="icon" href="assets/imgs/logo.png">
+
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <img class="logo" src="./assets/imgs/logo.png" height="50px">
+                <h1 href="index.html">Obsession<span>.me</span></h1>
+            </div>
+            <ul class="navbar">
+                <a class="home" href="index.html">
+                    <li>Home</li>
+                </a>
+                <a class="sobre" href="">
+                    <li>Sobre</li>
+                </a>
+                <a class="pagina_atual" href="">
+                    <li>Login</li>
+                </a>
+                <a class="registrar " href="cadastro.html ">
+                    <li>Registrar</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fundo-login">
+        <div class="flex-container">
+            <div class="inputs">
+                <div class="div-login">
+                    <h1>You can (not) log in</h1>
+                    <div id="form_login" method="post">
+                        <a class="ipt">E-mail:</a>
+                        <input id="email_input" name="email" type="text" placeholder="Login">
+                        <a class="ipt">Senha</a>
+                        <input id="senha_input" name="senha" type="password" placeholder="******">
+                        <br>
+                        <button class="btn_login" onclick="entrar()">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+    <div id="div_aguardar" class="loading-div">
+        <img src="./assets/imgs/bgs/nerv-loading.mp4" id="loading-gif">
+    </div>
+
+    <div id="div_erros_login">
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    function entrar() {
+        aguardar();
+
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+        if (emailVar == "" || senhaVar == "") {
+            window.alert("Preencha todos os campos para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function(resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function() {
+                        window.location = "./user.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function(erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+</script>
