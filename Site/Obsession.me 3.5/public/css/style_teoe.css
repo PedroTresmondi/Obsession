@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 html {
@@ -8,6 +9,7 @@ html {
 }
 
 body {
+    height: 100%;
     background-color: #f9f9f9;
 }
 
@@ -18,6 +20,36 @@ body {
     height: 100%;
     width: 60vw;
     margin-left: 20%;
+}
+
+.elenco_table {
+    background-color: #131313;
+    margin-left: 34%;
+    margin-top: 60px;
+}
+
+.elenco_table th {
+    font-family: Arial;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.elenco {
+    margin-left: -5rem;
+}
+
+.finally_evangelion_cover {
+    padding: 40px;
+    margin-top: 70px;
+}
+
+.titulo_cover {
+    float: right;
+    font-family: arial;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1100px) {
@@ -32,6 +64,92 @@ body {
     .infobox {
         display: none;
     }
+    .elenco_table {
+        background-color: #131313;
+        margin-left: 15rem;
+        margin-top: 60px;
+    }
+    .elenco_table th {
+        border: 1px solid white;
+        padding: 25px;
+    }
+    .finally_evangelion_cover {
+        padding: 40px;
+        margin-top: 70px;
+    }
+    .titulo_cover {
+        float: right;
+        font-family: arial;
+        color: white;
+        font-size: 15px;
+        margin-right: 430px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .elenco_table {
+        background-color: #131313;
+        margin-left: 7rem;
+        margin-top: 60px;
+    }
+    .elenco_table th {
+        border: 1px solid white;
+        padding: 25px;
+    }
+    .finally_evangelion_cover {
+        padding: 40px;
+        margin-top: 70px;
+    }
+    .titulo_cover {
+        float: right;
+        font-family: arial;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        margin-right: 0px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+}
+
+.hiddenimg {
+    display: none;
+}
+
+.hiddentxt {
+    font-weight: bold;
+    color: white;
+    z-index: 99;
+}
+
+.hiddentxt a {
+    color: white;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.hiddenclick {
+    font-weight: bold;
+    color: #F00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hiddenclick a {
+    color: #F00;
+    text-decoration: none;
+}
+
+.hiddenclick a:visited {
+    color: #F00;
+    text-decoration: none;
+}
+
+.hiddentxt:hover~.hiddenimg {
+    display: block;
+    position: absolute;
+    z-index: 2
 }
 
 .home {
@@ -149,16 +267,6 @@ nav a {
     margin-top: 10%;
 }
 
-.texto_personagens {
-    font-family: 'Lato', sans-serif;
-    padding: 30px;
-    color: white;
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10%;
-}
-
 .titulo_2 {
     margin-top: 10%;
     position: relative;
@@ -188,14 +296,14 @@ infobox infobox_v2 {
     position: fixed;
     background-color: #131313;
     border-width: 0px 1px 0px 1px;
-    margin-top: 0px;
+    top: 55px;
 }
 
 .personagens_sobre {
     padding: 50px 30px;
 }
 
-.personagens_sobre h1 {
+.personagens_sobre {
     margin-top: 12%;
     position: relative;
     display: flex;
@@ -211,76 +319,12 @@ infobox infobox_v2 {
     text-align: center;
     font-size: 50px;
     margin-left: 25%;
-}
-
-@media (max-width: 1100px) {
-    .personagens_sobre h1 {
-        width: 22rem;
-        margin-left: 9%;
-    }
 }
 
 .personagem_sobre,
 tr {
     color: white;
     table-layout: auto;
-}
-
-.manga h1 {
-    margin-top: 12%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: serif;
-    color: white;
-    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
-    background-color: #000000;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    width: 50%;
-    text-align: center;
-    font-size: 50px;
-    margin-left: 25%;
-}
-
-.sobre_manga {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    padding: 30px;
-    color: white;
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10%;
-}
-
-.anime h1 {
-    margin-top: 12%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: serif;
-    color: white;
-    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
-    background-color: #000000;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    width: 50%;
-    text-align: center;
-    font-size: 50px;
-    margin-left: 25%;
-}
-
-.sobre_anime {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    padding: 30px;
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10%;
 }
 
 .soundtrack h1 {
@@ -372,11 +416,11 @@ tr {
     padding: 30px
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: red;
     border-radius: 10px;
 }
