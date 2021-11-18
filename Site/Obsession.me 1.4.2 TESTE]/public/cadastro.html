@@ -106,7 +106,7 @@
         var senha = formulario.get("senha");
         var confirmacaoSenha = formulario.get("confirmacao-senha");
 
-
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
         if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
 
             window.alert("Preencha todos os campos para prosseguir!");
@@ -138,7 +138,7 @@
             return false;
         }
 
-        fetch("/usuarios/cadastro", {
+        fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario
         }).then(function(resposta) {
@@ -147,7 +147,7 @@
 
             if (resposta.ok) {
                 window.alert("Cadastro realizado com sucesso!");
-                window.location = "login2.html";
+                window.location = "login.html";
                 limparFormulario();
                 finalizarAguardar();
             } else {
