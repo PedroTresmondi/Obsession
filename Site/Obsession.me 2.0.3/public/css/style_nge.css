@@ -89,6 +89,11 @@ nav a {
     transition-delay: .2s;
 }
 
+.conteudo{
+
+
+}
+
 .enredo h1 {
     margin: 0 auto;
     align-self: start;
@@ -118,4 +123,36 @@ nav a {
     padding-top: 25%;
     font-size: 35px;
     color: white;
+}
+
+
+.enredonge p{
+    padding: 50px;
+}
+
+
+.tituloNGE{
+
+
+
+    
+}
+
+.tituloNGE h1 {
+    margin: 0 auto;
+    align-self: start;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 550px;
+    padding: 20px;
+    text-align: center;
 }

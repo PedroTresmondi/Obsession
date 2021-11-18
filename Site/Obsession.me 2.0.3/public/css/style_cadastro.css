@@ -273,7 +273,10 @@ body {
     /*Cursor*/
 }
 
-.loading-div {
-    margin-left: 90%;
-    margin-bottom: -10%;
+.loading-div img{
+    z-index: 15;
+    margin-left: 20%;
+    position: fixed;
+    margin-top: -210px;
+   
 }
