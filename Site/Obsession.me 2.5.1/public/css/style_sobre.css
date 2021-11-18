@@ -10,19 +10,15 @@ html {
 }
 
 body {
-    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%, rgb(0, 0, 0) 0%, rgba(0, 112, 218, 1) 90%);
     background-size: cover;
-    height: 3240px;
+    height: 100%;
 }
-
-
-/*====================HEADER===================*/
 
 .header {
     z-index: 3;
     position: fixed;
     width: 100%;
-    height: 6%;
+    height: 5%;
     display: block;
     background: #131313;
 }
@@ -30,7 +26,7 @@ body {
 .inner_header {
     margin-left: 25%;
     margin-right: 25%;
-    width: 50vw;
+    width: 65vw;
     height: 100%;
     display: block;
     margin: 0 auto;
@@ -63,10 +59,6 @@ body {
     display: flex;
     float: right;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
 }
 
 .navbar a {
@@ -83,15 +75,9 @@ body {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
-.home {
-    font-weight: bolder;
-    color: #ce0000;
-    font-size: 15px;
-}
-
-.sair {
+.homee {
     font-weight: lighter;
-    color: white;
+    color: #ffff;
     font-size: 15px;
 }
 
@@ -107,45 +93,11 @@ body {
     font-size: 15px;
 }
 
-.sobre {
-    font-weight: lighter;
-    color: white;
-    font-size: 15px;
-}
-
-.nge {
-    font-weight: lighter;
-    color: white;
-    font-size: 15px;
-}
-
-#teoe {
-    font-weight: lighter;
-    color: white;
-    font-size: 15px;
-}
-
-.re {
-    font-weight: lighter;
-    color: white;
-    font-size: 15px;
-}
-
 .pagina_atual {
     font-weight: lighter;
-    color: white;
+    color: #ce0000;
     font-size: 15px;
 }
-
-.container {
-    padding: 50px;
-}
-
-
-/*====================HEADER===================*/
-
-
-/*====================FOOTER===================*/
 
 footer {
     width: 100%;
@@ -211,6 +163,3 @@ hr {
     object-fit: cover;
     border-radius: 100%;
 }
-
-
-/*====================FOOTER===================*/

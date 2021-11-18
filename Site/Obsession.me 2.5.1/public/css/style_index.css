@@ -202,3 +202,12 @@ body {
 
 
 /*====================REBUILDS OF EVANGELION===================*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
