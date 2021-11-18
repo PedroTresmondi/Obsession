@@ -1,0 +1,279 @@
+body {
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%, rgb(0, 0, 0) 0%, rgb(0, 83, 161) 90%);
+    background: url('../assets/imgs/bgs/registro_bg.jpg');
+    background-size: cover;
+    height: 975px;
+}
+
+.home {
+    font-weight: lighter;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.sair {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.login {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.sobre {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.nge {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+#teoe {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.re {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.pagina_atual {
+    font-weight: bolder;
+    color: #ce0000;
+    font-size: 15px;
+}
+
+.texto-registro {
+    margin-left: 50%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    opacity: 0.9;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 700px;
+    text-align: center;
+    transform: translateY(100%);
+    font-size: 20px
+}
+
+.div-registro {
+    width: 20em;
+    height: auto;
+    position: fixed;
+    background-color: #131313;
+    margin-left: 23%;
+    padding: 520px 30px;
+    transform: translate(10px, -150px);
+    border-radius: 5px;
+}
+
+.div-registro h1 {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    z-index: 2;
+    background-color: #000000;
+    border: 3px solid #f1f1f1;
+    position: fixed;
+    transform: translate(5%, -150px);
+    width: 285px;
+}
+
+.div-text {
+    width: 100%;
+    /*Largura*/
+    align-items: center;
+    /*Alinhamento os itens verticalmente*/
+    margin-left: 200px;
+    /*Margem extera da esqueda*/
+}
+
+.div-text h1 {
+    font-size: 3.4em;
+    /*Tamanho da fonte*/
+    line-height: 1.4em;
+    /*Altura da linha*/
+    color: #FFF;
+    /*Cor do texto*/
+    margin-bottom: 16px;
+    /*Margem externa inferior*/
+    margin-top: 0;
+    /*Margem externa superior*/
+}
+
+.div-text .h1_1 {
+    margin-top: 30px;
+    /*Margem externa superior*/
+}
+
+.div-registro p {
+    width: 290px;
+    /*Largura*/
+    margin-top: 10px;
+    /*Margem externa superior*/
+    font-size: 0.9em;
+    /*Tamanho da fonte*/
+    letter-spacing: 0.01em;
+    /*Espaçamento da fonte*/
+    color: #5D5D5D;
+    /*Cor do texto*/
+}
+
+.div-registro input {
+    width: 280px;
+    color: #FFF;
+    background: no-repeat 5% center;
+    /*Largura*/
+    height: 2.0em;
+    /*Altura*/
+    border-radius: 5px;
+    /*Arredondamento da borda*/
+    margin-top: 0.9em;
+    /*Margem externa superior*/
+    padding-left: 40px;
+    /*Margem interna da esquerda*/
+    font-size: 14px;
+    /*Tamanho da fonte*/
+    display: flex;
+    /*Permite um layout flexível, reorganizando de acordo com a necessidade.*/
+    align-items: center;
+    /*Alinhamento dos itens verticalmente*/
+    border: solid 1px #2A2A2A;
+    /*Borda*/
+}
+
+.div-registro #ipt_email {
+    color: #fff;
+    background: no-repeat 5% center;
+    /*Imagem de fundo*/
+    background-size: 18px;
+    /*Tamanho da imagem de fundo*/
+}
+
+.div-registro #ipt_password {
+    color: #fff;
+    background: no-repeat 5% center;
+    /*Imagem de fundo*/
+    background-size: 18px;
+    /*Tamanho da imagem de fundo*/
+}
+
+.div-registro #ipt_email:focus {
+    border: 1px solid #ce0000;
+    /*Borda*/
+    box-shadow: 0px 0px 3px #1a86a7cc;
+    /*Sombra da borda*/
+    background: no-repeat 5% center;
+    /*Imagem de fundo*/
+    background-size: 18px;
+    /*Tamanho da imagem de fundo*/
+    transition: .6s;
+    /*Tempo de transição*/
+    outline: none;
+    /**/
+}
+
+.div-registro #ipt_password:focus {
+    border: 1px solid #ce0000;
+    /*Borda*/
+    box-shadow: 0px 0px 3px #1a86a7cc;
+    /*Sombra da borda*/
+    background: no-repeat 5% center;
+    /*Imagem de fundo*/
+    background-size: 18px;
+    /*Tamanho da imagem de fundo*/
+    transition: .6s;
+    /*Tempo de transição*/
+    outline: none;
+    /**/
+}
+
+.div-registro #ipt_passwordc:focus {
+    border: 1px solid #ce0000;
+    /*Borda*/
+    box-shadow: 0px 0px 3px #1a86a7cc;
+    /*Sombra da borda*/
+    background: no-repeat 5% center;
+    /*Imagem de fundo*/
+    background-size: 18px;
+    /*Tamanho da imagem de fundo*/
+    transition: .6s;
+    /*Tempo de transição*/
+    outline: none;
+    /**/
+}
+
+.div-registro #ipt_nome:focus {
+    border: 1px solid #ce0000;
+    box-shadow: 0px 0px 3px #1a86a7cc;
+    background: no-repeat 5% center;
+    background-size: 18px;
+    transition: .6s;
+    outline: none;
+}
+
+.div-registro::placeholder {
+    color: #848484;
+    /*Cor do texto*/
+}
+
+.div-registro a {
+    font-size: 0.9em;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    color: #ffff;
+    justify-content: flex-start;
+    margin-top: 0.6em;
+}
+
+.div-registro .btn_registro {
+    width: 100%;
+    /*Largura*/
+    height: 2.4em;
+    /*Altura*/
+    background: linear-gradient(90deg, #3f0000 0%, #ce0000 78.46%);
+    /*Cor do fundo*/
+    margin-top: 1.4em;
+    /*Margem externa superior*/
+    margin-bottom: 0;
+    /*Margem externa inferiir*/
+    border-radius: 50px;
+    /*Arredondamento da borda*/
+    font-weight: 500;
+    /*Grossura da fonte*/
+    font-size: 16px;
+    /*Tamanho da fonte*/
+    line-height: 21px;
+    /*Altura da linha*/
+    border: none;
+    /*Borda*/
+    color: #FFFFFF;
+    /*Cor do texto*/
+    cursor: pointer;
+    /*Cursor*/
+}
+
+.loading-div {
+    margin-left: 90%;
+    margin-bottom: -10%;
+}
