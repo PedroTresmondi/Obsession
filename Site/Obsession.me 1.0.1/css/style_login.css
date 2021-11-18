@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%, rgb(34, 69, 134) 0%, rgba(0, 112, 218, 1) 90%);
+    background-size: cover;
+}
+
+
+/*====================HEADER===================*/
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background: rgb(34, 69, 134);
+    background: linear-gradient(0deg, rgba(34, 69, 134, 0) 30%, rgba(22, 77, 224, 1) 80%);
+}
+
+.inner_header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+    height: 30px;
+}
+
+.logo_container h1 {
+    color: #e2e2e2;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+    color: #520303;
+    font-size: 30px
+}
+
+.navbar {
+    display: flex;
+    float: right;
+    height: 100%;
+}
+
+.navbar a {
+    height: 100%;
+    float: left;
+    display: table;
+    padding: 0px 20px;
+}
+
+.navbar a li {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.navbar .pagina_atual {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #520303;
+}
+
+.pagina_atual:hover {
+    color: #2b0202;
+}
+
+
+/*====================BOTOES===================*/
+
+
+/*====================BOTOES===================*/
+
+
+/*====================HEADER===================*/
