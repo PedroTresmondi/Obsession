@@ -28,8 +28,6 @@ body {
 }
 
 .inner_header {
-    margin-left: 25%;
-    margin-right: 25%;
     width: 65vw;
     height: 100%;
     display: block;
@@ -60,27 +58,137 @@ body {
 }
 
 .navbar {
-    display: flex;
     float: right;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
 }
 
 .navbar a {
-    height: 100%;
-    float: left;
     display: table;
     padding: 0px 20px;
 }
 
-.navbar a li {
+.navbar li {
+    text-decoration: none;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.navbar li:hover {
+    background-color: #808080;
+    width: 100%;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toggle-button {
+    z-index: 10;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ce0000;
+    border-radius: 10px;
+}
+
+@media (max-width: 990px) {
+    .toggle-button {
+        display: flex;
+        right: 3rem;
+    }
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar li a {
+        padding: .1rem 1rem;
+    }
+    .navbar li {
+        width: 100%;
+    }
+    .navbar.active {
+        background-color: #131313;
+        width: 660vw;
+        margin-right: -298vw;
+        height: 20vh;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .bg-image-nge {
+        width: 70rem;
+    }
+    .bg-text-nge {
+        width: 20rem;
+    }
+    .bg-image-teoe {
+        width: 70rem;
+    }
+    .bg-text-teoe {
+        width: 20rem;
+    }
+    .bg-image-roe {
+        width: 70rem;
+    }
+    .bg-text-roe {
+        width: 20rem;
+    }
+    .texto-registro h2 {
+        display: none;
+    }
+    .texto-registro h1 {
+        display: none;
+    }
+    .texto-registro {
+        display: none;
+    }
+}
+
+.div-registro.active {
+    width: 20em;
+    height: auto;
+    position: fixed;
+    background-color: #131313;
+    margin-left: 15.2%;
+    padding: 520px 30px;
+    transform: translate(-55px, -245px);
+    border-radius: 5px;
+}
+
+.div-login.active {
+    width: 20em;
+    height: auto;
+    position: fixed;
+    background-color: #131313;
+    margin-left: 15.2%;
+    padding: 520px 30px;
+    transform: translate(-55px, -245px);
+    border-radius: 5px;
+}
+
+.logo {
+    display: none;
 }
 
 .home {
@@ -147,12 +255,13 @@ body {
 
 /*====================FOOTER===================*/
 
-footer {
-    width: 100%;
+.footer {
+    width: 100vw;
     padding: 0;
 }
 
 .page-footer {
+    width: 100vw;
     padding-top: 30px;
     padding-bottom: 0px;
     background-color: #131313;
@@ -160,7 +269,7 @@ footer {
 }
 
 #container-footer {
-    width: 100%;
+    width: 100vw;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -215,11 +324,11 @@ hr {
 
 /*====================FOOTER===================*/
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: red;
     border-radius: 10px;
 }

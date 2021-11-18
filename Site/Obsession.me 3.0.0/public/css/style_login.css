@@ -1,8 +1,37 @@
 body {
-    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%, rgb(0, 0, 0) 0%, rgb(0, 83, 161) 90%);
-    background: url('../assets/imgs/bgs/registro_bg.jpg');
+    background-image: url("../assets/imgs/bgs/login_bg.jpg");
+    position: fixed;
     background-size: cover;
     height: 975px;
+}
+
+@media (max-width: 500px) {
+    .logo_container h1 {
+        color: #e2e2e2;
+        position: absolute;
+        height: 100%;
+        display: table-cell;
+        right: 6rem;
+        vertical-align: middle;
+        font-family: 'Anton', sans-serif;
+        font-size: 35px;
+        font-weight: 200;
+    }
+    .toggle-button {
+        display: flex;
+        right: 3rem;
+        top: 4.5rem;
+    }
+    .navbar.active {
+        background-color: #131313;
+        width: 660vw;
+        margin-right: -280vw;
+        height: 20vh;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 2rem;
+    }
 }
 
 .home {
@@ -18,6 +47,12 @@ body {
 }
 
 .login {
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.registrar {
     font-weight: lighter;
     color: white;
     font-size: 15px;
@@ -53,37 +88,18 @@ body {
     font-size: 15px;
 }
 
-.texto-registro {
-    margin-left: 50%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: serif;
-    color: white;
-    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
-    background-color: #000000;
-    opacity: 0.9;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    width: 700px;
-    text-align: center;
-    transform: translateY(100%);
-    font-size: 20px
-}
-
-.div-registro {
+.div-login {
     width: 20em;
-    height: auto;
+    height: 100%;
     position: fixed;
     background-color: #131313;
     margin-left: 15.2%;
     padding: 520px 30px;
-    transform: translate(10px, -150px);
+    transform: translate(-45px, -245px);
     border-radius: 5px;
 }
 
-.div-registro h1 {
+.div-login h1 {
     display: flex;
     justify-content: space-around;
     color: white;
@@ -123,7 +139,7 @@ body {
     /*Margem externa superior*/
 }
 
-.div-registro p {
+.div-login p {
     width: 290px;
     /*Largura*/
     margin-top: 10px;
@@ -136,10 +152,8 @@ body {
     /*Cor do texto*/
 }
 
-.div-registro input {
+.div-login input {
     width: 280px;
-    color: #FFF;
-    background: no-repeat 5% center;
     /*Largura*/
     height: 2.0em;
     /*Altura*/
@@ -159,7 +173,7 @@ body {
     /*Borda*/
 }
 
-.div-registro #ipt_email {
+.div-login #ipt_email {
     color: #fff;
     background: no-repeat 5% center;
     /*Imagem de fundo*/
@@ -167,7 +181,7 @@ body {
     /*Tamanho da imagem de fundo*/
 }
 
-.div-registro #ipt_password {
+.div-login #ipt_password {
     color: #fff;
     background: no-repeat 5% center;
     /*Imagem de fundo*/
@@ -175,7 +189,7 @@ body {
     /*Tamanho da imagem de fundo*/
 }
 
-.div-registro #ipt_email:focus {
+.div-login #ipt_email:focus {
     border: 1px solid #ce0000;
     /*Borda*/
     box-shadow: 0px 0px 3px #1a86a7cc;
@@ -190,7 +204,7 @@ body {
     /**/
 }
 
-.div-registro #ipt_password:focus {
+.div-login #ipt_password:focus {
     border: 1px solid #ce0000;
     /*Borda*/
     box-shadow: 0px 0px 3px #1a86a7cc;
@@ -205,36 +219,12 @@ body {
     /**/
 }
 
-.div-registro #ipt_passwordc:focus {
-    border: 1px solid #ce0000;
-    /*Borda*/
-    box-shadow: 0px 0px 3px #1a86a7cc;
-    /*Sombra da borda*/
-    background: no-repeat 5% center;
-    /*Imagem de fundo*/
-    background-size: 18px;
-    /*Tamanho da imagem de fundo*/
-    transition: .6s;
-    /*Tempo de transição*/
-    outline: none;
-    /**/
-}
-
-.div-registro #ipt_nome:focus {
-    border: 1px solid #ce0000;
-    box-shadow: 0px 0px 3px #1a86a7cc;
-    background: no-repeat 5% center;
-    background-size: 18px;
-    transition: .6s;
-    outline: none;
-}
-
-.div-registro::placeholder {
+.div-login::placeholder {
     color: #848484;
     /*Cor do texto*/
 }
 
-.div-registro a {
+.div-login a {
     font-size: 0.9em;
     line-height: 14px;
     display: flex;
@@ -246,7 +236,7 @@ body {
     margin-top: 0.6em;
 }
 
-.div-registro .btn_registro {
+.div-login .btn_login {
     width: 100%;
     /*Largura*/
     height: 2.4em;
@@ -273,9 +263,20 @@ body {
     /*Cursor*/
 }
 
-.loading-div img {
-    z-index: 15;
-    margin-left: 17%;
+.texto-login {
     position: fixed;
-    margin-top: -333px;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 700px;
+    text-align: center;
+    transform: translateY(100%);
+    font-size: 20px
 }

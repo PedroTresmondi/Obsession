@@ -17,6 +17,11 @@
 <body>
     <header>
         <div class="header">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
             <div class="inner_header">
                 <div class="logo_container">
                     <img class="logo" src="./assets/imgs/logo.png" height="50px">
@@ -101,3 +106,11 @@
 
 
 </html>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>

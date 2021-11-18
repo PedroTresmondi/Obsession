@@ -17,29 +17,35 @@
 <body>
     <header>
         <div class="header">
-            <div class="inner_header">
-                <div class="logo_container">
-                    <img class="logo" src="./assets/imgs/logo.png" height="50px">
-                    <h1 href="index.html">Obsession<span>.me</span></h1>
-                </div>
-                <ul class="navbar">
-                    <a id="nge" href="#parte1site">
-                        <li>Neon Genesis Evangelion</li>
-                    </a>
-                    <a id="teoe" href="#parte2site">
-                        <li>The End Of Evangelion</li>
-                    </a>
-                    <a id="re" href="#parte3site">
-                        <li>Rebuilds Evangelion</li>
-                    </a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="header">
+                <div class="inner_header">
+                    <div class="logo_container">
+                        <img class="logo" src="./assets/imgs/logo.png" height="50px">
+                        <h1 href="index.html">Obsession<span>.me</span></h1>
+                    </div>
+                    <ul class="navbar">
+                        <a id="nge" href="#parte1site">
+                            <li>Neon Genesis Evangelion</li>
+                        </a>
+                        <a id="teoe" href="#parte2site">
+                            <li>The End Of Evangelion</li>
+                        </a>
+                        <a id="re" href="#parte3site">
+                            <li>Rebuilds Evangelion</li>
+                        </a>
 
-                    <a class="sair " href="index.html ">
-                        <li>Sair</li>
-                    </a>
+                        <a class="sair " href="index.html ">
+                            <li>Sair</li>
+                        </a>
+
+                </div>
 
             </div>
-
-        </div>
     </header>
     <!--Neon Genesis Evangelion-->
     <a id="parte1site"></a>
@@ -104,6 +110,13 @@
 
 </html>
 <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+
     function on_NGE() {
         teoe.style.color = '#ffff';
         re.style.color = '#ffff';

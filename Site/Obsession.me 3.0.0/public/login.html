@@ -19,45 +19,51 @@
     <!--Header-->
 
     <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <img class="logo" src="./assets/imgs/logo.png" height="50px">
-                <h1 href="index.html">Obsession<span>.me</span></h1>
+        <div class="header">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="inner_header">
+                <div class="logo_container">
+                    <img class="logo" src="./assets/imgs/logo.png" height="50px">
+                    <h1 href="index.html">Obsession<span>.me</span></h1>
+                </div>
+                <ul class="navbar">
+                    <a class="home" href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="sobre" href="">
+                        <li>Sobre</li>
+                    </a>
+                    <a class="pagina_atual" href="">
+                        <li>Login</li>
+                    </a>
+                    <a class="registrar " href="cadastro.html ">
+                        <li>Registrar</li>
+                    </a>
+                </ul>
             </div>
-            <ul class="navbar">
-                <a class="home" href="index.html">
-                    <li>Home</li>
-                </a>
-                <a class="sobre" href="">
-                    <li>Sobre</li>
-                </a>
-                <a class="pagina_atual" href="">
-                    <li>Login</li>
-                </a>
-                <a class="registrar " href="cadastro.html ">
-                    <li>Registrar</li>
-                </a>
-            </ul>
         </div>
-    </div>
 
-    <div class="fundo-login">
-        <div class="flex-container">
-            <div class="inputs">
-                <div class="div-login">
-                    <h1>You can (not) log in</h1>
-                    <div id="form_login" method="post">
-                        <a class="ipt">E-mail:</a>
-                        <input id="email_input" name="email" type="text" placeholder="Login">
-                        <a class="ipt">Senha</a>
-                        <input id="senha_input" name="senha" type="password" placeholder="******">
-                        <br>
-                        <button class="btn_login" onclick="entrar()">Entrar</button>
+        <div class="fundo-login">
+            <div class="flex-container">
+                <div class="inputs">
+                    <div class="div-login">
+                        <h1>You can (not) log in</h1>
+                        <div id="form_login" method="post">
+                            <a class="ipt">E-mail:</a>
+                            <input id="email_input" name="email" type="text" placeholder="Login">
+                            <a class="ipt">Senha</a>
+                            <input id="senha_input" name="senha" type="password" placeholder="******">
+                            <br>
+                            <button class="btn_login" onclick="entrar()">Entrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
 
@@ -81,6 +87,14 @@
 </html>
 
 <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+
+
     function entrar() {
         aguardar();
 
