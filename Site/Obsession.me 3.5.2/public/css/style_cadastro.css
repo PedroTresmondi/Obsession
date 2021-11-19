@@ -4,6 +4,7 @@ body {
     position: fixed;
     background-size: cover;
     height: 975px;
+    overflow-x: hidden;
 }
 
 @media (max-width: 500px) {
@@ -29,6 +30,7 @@ body {
         margin-right: -280vw;
         height: 20vh;
         display: flex;
+        opacity: 0.9;
         flex-wrap: nowrap;
         align-items: center;
         margin-top: 2rem;
