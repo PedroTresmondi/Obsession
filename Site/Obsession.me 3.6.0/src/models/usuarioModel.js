@@ -18,7 +18,27 @@ function entrar(email, senha) {
     return database.executar(instrucao);
 }
 
-function cadastrar(nome, email, senha, personagem ) {
+
+
+
+
+function rank() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function rank(): ")
+    var instrucao = `
+    SELECT(SELECT count(personagem) FROM usuario WHERE personagem = 'Asuka')  AS 'asuka',
+    (SELECT count(personagem) FROM usuario WHERE personagem = 'Shinji')  AS 'shinji',
+	(SELECT count(personagem) FROM usuario WHERE personagem = 'Rei')  AS 'rei',
+	(SELECT count(personagem) FROM usuario WHERE personagem = 'Misato')  AS 'misato',
+	(SELECT count(personagem) FROM usuario WHERE personagem = 'Gendo')  AS 'gendo';`
+    console.log("Executando a instrução (SELECT) SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+
+
+
+
+function cadastrar(nome, email, senha, personagem) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, personagem);
     var instrucao = `
         INSERT INTO usuario (nome, email, senha, personagem) VALUES ('${nome}', '${email}', '${senha}','${personagem}');
@@ -31,4 +51,5 @@ module.exports = {
     entrar,
     cadastrar,
     listar,
+    rank
 };
