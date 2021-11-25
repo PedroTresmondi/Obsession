@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#body_index {
+    overflow-x: hidden;
+    background-color: #131313;
+    height: 2415px;
+}
+
+/*====================NEON GENESIS EVANGELION===================*/
+
+.bg-image-nge {
+    height: 40%;
+    z-index: 1;
+    background-image: url("../assets/imgs/bgs/indexbacgrounds/NGEindex.png");
+    filter: blur(6px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.bg-image-nge:hover {
+    background-image: url("../assets/imgs/bgs/indexbacgrounds/NGEindex_2.gif");
+    transform: scale(-1.0);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.bg-text-nge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    align-self: start;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 550px;
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-image-nge h1 {
+    font-size: 500%;
+}
+
+.bg-image-nge h2 {
+    font-size: 300%;
+}
+
+
+/*====================NEON GENESIS EVANGELION===================*/
+
+
+/*====================THE END OF EVANGELION===================*/
+
+.bg-image-teoe {
+    height: 40%;
+    z-index: 1;
+    background-image: url("../assets/imgs/bgs/indexbacgrounds/TEOEindex.png");
+    filter: blur(6px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.bg-image-teoe:hover {
+    background-image: url("../assets/imgs/bgs/indexbacgrounds/TEOEindex_2.gif");
+    transform: scale(-1.0);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.bg-text-teoe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    align-self: start;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    z-index: 2;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*====================THE END OF EVANGELION===================*/
+
+
+/*====================REBUILDS OF EVANGELION===================*/
+
+.bg-image-roe {
+    height: 30%;
+    z-index: 1;
+    background-image: url("../assets/imgs/bgs/indexbacgrounds/REindex.jpg");
+    filter: blur(6px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.bg-image-roe:hover {
+    background-image: url("../assets/imgs/bgs/indexbacgrounds/REindex_2.gif");
+    transform: scale(-1.0);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.bg-text-roe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    align-self: start;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    z-index: 2;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 245%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 550px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*====================REBUILDS OF EVANGELION===================*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}

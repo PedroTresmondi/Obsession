@@ -10,16 +10,16 @@ html {
 }
 
 body {
-    background-color: #131313;
-    height: 3940px;
     overflow-x: hidden;
+    background-color: #131313;
+    height: 3240px;
 }
 
 
 /*====================NEON GENESIS EVANGELION===================*/
 
 .bg-image-nge {
-    height: 30%;
+    height: 40%;
     z-index: 1;
     background-image: url("../assets/imgs/bgs/indexbacgrounds/NGEindex.png");
     filter: blur(6px);
@@ -63,7 +63,7 @@ body {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -87,7 +87,7 @@ body {
 /*====================THE END OF EVANGELION===================*/
 
 .bg-image-teoe {
-    height: 30%;
+    height: 40%;
     z-index: 1;
     background-image: url("../assets/imgs/bgs/indexbacgrounds/TEOEindex.png");
     filter: blur(6px);
@@ -132,7 +132,7 @@ body {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 150%;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 550px;
@@ -192,8 +192,8 @@ body {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 245%;
-    left: 50%;
+    top: 320%;
+        left: 50%;
     transform: translate(-50%, 0%);
     width: 550px;
     padding: 20px;

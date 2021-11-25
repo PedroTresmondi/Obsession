@@ -332,8 +332,7 @@ body {
 
 .page-footer {
     width: 100vw;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding-top: 20px;
     background-color: #131313;
     color: #fff;
 }
@@ -344,7 +343,8 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: -40px;
     max-width: 1280px;
 }
 
