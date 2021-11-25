@@ -11,3 +11,10 @@ CREATE TABLE usuario (
 	senha VARCHAR(50),
 	personagem VARCHAR(50)
 );
+
+
+create table personagem (
+IDpersonagem int PRIMARY KEY auto_increment,
+pesronagem VARCHAR(45)
+
+) auto_increment =500;

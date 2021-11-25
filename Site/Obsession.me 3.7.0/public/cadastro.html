@@ -65,7 +65,6 @@
                     <input id="ipt_pfavorito" " type="text" list="personagem_favorito" size="50px" placeholder="Misato Katsuragi">
                     <datalist id="personagem_favorito">
     
-    
                         <option id="100" value="Shinji">Shinji Ikari</option> 
                         <option id="101" value="Misato">Misato Katsuragi</option>    
                         <option id="102" value="Asuka">Asuka Langley</option>
@@ -123,6 +122,29 @@
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
         var personagemVar = ipt_pfavorito.value;
+
+
+        if (ipt_pfavorito.value == 'Asuka') {
+            personagemVar =500;
+        }
+        
+        if (ipt_pfavorito.value == 'Shinji') {
+            personagemVar =501;
+        }
+        
+        if (ipt_pfavorito.value == 'Rei') {
+            personagemVar =502;
+        }
+        
+        if (ipt_pfavorito.value == 'Misato') {
+            personagemVar =503;
+        }
+        
+        if (ipt_pfavorito.value == 'Gendo') {
+            personagemVar =504;
+        }
+        
+      
 
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || personagemVar == "") {

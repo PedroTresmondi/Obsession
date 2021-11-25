@@ -19,7 +19,7 @@ router.post("/autenticar", function(req, res) {
     usuarioController.entrar(req, res);
 });
 
-router.post("/pedrotresmohjndiu", function(req, res) {
+router.post("/dadosgraph", function(req, res) {
     usuarioController.rank(req, res);
 });
 

@@ -115,10 +115,76 @@ body {
         height: 100%;
     }
 
+
+    
+    @media (max-width: 1520px) {
+        .toggle-button {
+            display: flex;
+            right: 3rem;
+        }
+        .navbar {
+            display: none;
+            width: 100%;
+        }
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar li a {
+            padding: .1rem 1rem;
+        }
+        .navbar li {
+            width: 100%;
+        }
+        .navbar.active {
+            background-color: #131313;
+            width: 660vw;
+            margin-right: -298vw;
+            height: 20vh;
+            margin-top: -5px;   
+            opacity: 0.9;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        .bg-image-nge {
+            width: 95rem;
+        }
+        .bg-text-nge {
+            width: 20rem;
+        }
+        .bg-image-teoe {
+            width: 95rem;
+            
+        }
+        .bg-text-teoe {
+            width: 20rem;
+            top:250%
+        }
+        .bg-image-roe {
+            width: 95rem;
+        }
+        .bg-text-roe {
+            top: 400%;
+            width: 20rem;
+        }
+        .texto-registro h2 {
+            display: none;
+        }
+        .texto-registro h1 {
+            display: none;
+        }
+        .texto-registro {
+            display: none;
+        }
+    }
+    
+
+
 @media (max-width: 990px) {
     .toggle-button {
         display: flex;
-        right: 3rem;
+        right: 1rem;
     }
     .navbar {
         display: none;
@@ -156,6 +222,7 @@ body {
     }
     .bg-text-teoe {
         width: 20rem;
+        top: 190%;
     }
     .bg-image-roe {
         width: 70rem;
@@ -260,11 +327,19 @@ body {
 
 @media (max-width: 400px) {
     .header {
-        width: 100%;
-    }
+        width: 105vw;    }
+
+    .inner_header {
+        width: 80vw ;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }   
+
     .toggle-button {
         display: flex;
-        right: 3rem;
+        right: 1rem;
+        top: 5rem;
     }
     .navbar {
         display: none;
@@ -282,20 +357,21 @@ body {
     }
     .navbar.active {
         background-color: #131313;
-        width: 660vw;
+        width: 670vw;
         margin-right: -298vw;
         height: 20vh;
+        margin-top: 5rem;
         opacity: 0.9;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
     }
     .bg-image-nge {
-        width: 70rem;
+        width:30rem;;
     }
     .bg-text-nge {
-        width: 20rem;
-    }
+        width: 10rem;
+        margin-left: 5%;    }
     .bg-image-teoe {
         width: 70rem;
     }
