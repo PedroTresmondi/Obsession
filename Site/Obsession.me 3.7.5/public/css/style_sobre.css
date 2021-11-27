@@ -9,11 +9,95 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.body {
     background-size: cover;
-    height: 100%;
     overflow-x: hidden;
 }
+.fundo{
+    height: 100%;
+}
+.conteudo {
+    padding-top: 180px;
+    display: flex;
+}
+
+
+.titulo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 25%;
+    top: 10rem;
+}
+
+.titulo2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 25%;
+    top: 10rem;
+    margin-bottom: 15rem;
+}
+
+.text_sobre1{
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+width: 50%;
+    padding-top: 50px;
+}
+.text_sobre2{
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+width: 50%;
+    padding-top: 50px;
+}
+
+.text_sobre3{
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-top: 50px;
+}
+
+.fotos_ig{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
 
 .header {
     z-index: 3;
@@ -75,6 +159,17 @@ body {
     vertical-align: middle;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
+
+
+.coluna {
+    border-radius: 5px;
+    background: #492222;
+    box-shadow: 5px 5px 10px #411e1e, -5px -5px 10px #512626;
+    height: 100%;
+    width: 60vw;
+    margin-left: 20%;
+}
+
 
 .homee {
     font-weight: lighter;

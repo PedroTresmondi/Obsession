@@ -215,20 +215,26 @@ body {
         width: 70rem;
     }
     .bg-text-nge {
+        top: 60%;
         width: 20rem;
+        position: absolute;
     }
     .bg-image-teoe {
+        
         width: 70rem;
     }
     .bg-text-teoe {
+        top: 210%;
         width: 20rem;
-        top: 190%;
+        position: absolute;
     }
     .bg-image-roe {
         width: 70rem;
     }
     .bg-text-roe {
-        width: 20rem;
+        top: 325%;
+    width: 20rem;
+    position: absolute;
     }
     .texto-registro h2 {
         display: none;
