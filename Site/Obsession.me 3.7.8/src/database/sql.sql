@@ -1,5 +1,6 @@
 
 /* para workbench - local - desenvolvimento */
+
 CREATE DATABASE obsession;
 
 USE obsession;
@@ -11,9 +12,9 @@ CREATE TABLE usuario (
 	senha VARCHAR(50),
 	personagem VARCHAR(50)
 );
-
-
-create table personagem (
+ select * from usuario;
+ 
+ create table personagemx	 (
 IDpersonagem int PRIMARY KEY auto_increment,
 pesronagem VARCHAR(45)
 

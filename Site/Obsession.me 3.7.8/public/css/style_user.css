@@ -50,7 +50,7 @@ body {
     -webkit-filter: blur(0px);
 }
 
-.bg-text-nge {
+#bg-text-nge {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -118,7 +118,7 @@ body {
     -webkit-filter: blur(0px);
 }
 
-.bg-text-teoe {
+#bg-text-teoe {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -178,7 +178,7 @@ body {
     -webkit-filter: blur(0px);
 }
 
-.bg-text-roe {
+#bg-text-roe {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,8 +192,8 @@ body {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 320%;
-        left: 50%;
+    top: 300%;
+    left: 50%;
     transform: translate(-50%, 0%);
     width: 550px;
     padding: 20px;

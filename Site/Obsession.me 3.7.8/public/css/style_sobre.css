@@ -9,20 +9,22 @@ html {
     scroll-behavior: smooth;
 }
 
-.body {
+#body_sobre {
     background-size: cover;
     overflow-x: hidden;
+    height: 3530px;
 }
-.fundo{
+
+.fundo {
     height: 100%;
 }
+
 .conteudo {
     padding-top: 180px;
     display: flex;
 }
 
-
-.titulo{
+.titulo {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,7 +42,7 @@ html {
     top: 10rem;
 }
 
-.titulo2{
+.titulo2 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,28 +61,29 @@ html {
     margin-bottom: 15rem;
 }
 
-.text_sobre1{
+.text_sobre1 {
     font-family: 'Lato', sans-serif;
     padding: 30px;
     color: white;
     font-size: 30px;
     display: flex;
     flex-wrap: wrap;
-width: 50%;
-    padding-top: 50px;
-}
-.text_sobre2{
-    font-family: 'Lato', sans-serif;
-    padding: 30px;
-    color: white;
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-width: 50%;
+    width: 50%;
     padding-top: 50px;
 }
 
-.text_sobre3{
+.text_sobre2 {
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-top: 50px;
+}
+
+.text_sobre3 {
     font-family: 'Lato', sans-serif;
     padding: 30px;
     color: white;
@@ -91,13 +94,12 @@ width: 50%;
     padding-top: 50px;
 }
 
-.fotos_ig{
+.fotos_ig {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
-
 
 .header {
     z-index: 3;
@@ -160,7 +162,6 @@ width: 50%;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
-
 .coluna {
     border-radius: 5px;
     background: #492222;
@@ -169,7 +170,6 @@ width: 50%;
     width: 60vw;
     margin-left: 20%;
 }
-
 
 .homee {
     font-weight: lighter;
@@ -253,9 +253,157 @@ hr {
     text-align: center;
 }
 
-.navbar .img-profile {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 100%;
+.form {
+    align-items: center;
+    background: #131313;
+    margin: auto;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.titulo3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-top: 130px;
+}
+
+.form textarea:focus {
+    border: 1px solid #156E89;
+    /*Borda*/
+    outline: none;
+    /**/
+    transition: .7s;
+    /*Transição de animação*/
+}
+
+.form input:focus {
+    border: 1px solid #156E89;
+    /*Borda*/
+    outline: none;
+    transition: .7s;
+    /*Transição de animação*/
+}
+
+.form button {
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid #78788c;
+    background: 0;
+    font-family: 'Lato', sans-serif;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.form .btn-primary {
+    float: right;
+    width: 350px;
+    height: 35px;
+    color: #fff;
+    background-color: #ce0000;
+    border: 2px transparent;
+    margin-right: 40px;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
+.form .btn-primary:hover {
+    font-size: 15px;
+    background-image: linear-gradient(to bottom right, #ce0000, #5c150c);
+    transition: .3s;
+}
+
+.form .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: #ce0000;
+    color: #fff;
+    font-size: bold;
+    width: 344px;
+    font-weight: bold;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 20px;
+    box-shadow: 10px 10px 40px -14px #000;
+}
+
+.area-contacts {
+    display: flex;
+    /*Permite um layout flexível, reorganizando de acordo com a necessidade.*/
+    align-items: center;
+    /*Alinhamento dos obejetos verticalmente*/
+}
+
+.img-contacts {
+    width: 20px;
+    /*Largura*/
+    font-weight: 300;
+    /*Espessura da fonte*/
+    margin-right: 8px;
+    /*Margem externa lateral direita*/
+}
+
+.contacts a {
+    color: #fff;
+    /*Cor da fonte*/
+}
+
+.form span {
+    margin: 0 5px 0 15px/*MArgem externa*/
+}
+
+.metade {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    height: 800px;
+    border-radius: 10px 0 0 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.area-contato {
+    width: 100%;
+    /*Largura*/
+    margin-bottom: 60px;
+    /*Margem externa inferior*/
+    border-radius: 10px;
+    /*Borda arredondada*/
+    box-shadow: 0 0 40px -10px #000;
+    /*Sombra*/
+}
+
+input,
+textarea {
+    background: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ce0000;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    resize: vertical;
+}
+
+.formulario {
+    padding: 0 60px;
+    /*Margem interna*/
+    border-radius: 10px;
+    /*Borda arredondada*/
 }
