@@ -1,0 +1,487 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.fundo {
+    height: 100%;
+    background-size: cover;
+}
+
+.coluna {
+    border-radius: 5px;
+    background: #492222;
+    box-shadow: 5px 5px 10px #411e1e, -5px -5px 10px #512626;
+    height: 100%;
+    width: 60vw;
+    margin-left: 20%;
+}
+
+.finally_evangelion_cover {
+    padding: 40px;
+    margin-top: 70px;
+}
+
+.titulo_cover {
+    float: right;
+    font-family: arial;
+    color: white;
+    font-size: 15px;
+    margin-right: 280px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1100px) {
+    .coluna {
+        height: 100%;
+        width: 115vw;
+        margin-left: 0%;
+    }
+    #item_personagens {
+        margin-top: 10%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: serif;
+        color: white;
+        text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+        background-color: #000000;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        width: 80%;
+        text-align: center;
+        font-size: 50px;
+        margin-left: 10%;
+    }
+    .infobox_v2 {
+        display: none;
+    }
+    .infobox {
+        display: none;
+    }
+    .elenco_table {
+        background-color: #131313;
+        margin-left: 18rem;
+        margin-top: 60px;
+    }
+    .elenco_table th {
+        border: 1px solid white;
+        padding: 25px;
+    }
+    .finally_evangelion_cover {
+        padding: 40px;
+        margin-top: 70px;
+    }
+    .titulo_cover {
+        float: right;
+        font-family: arial;
+        color: white;
+        font-size: 15px;
+        margin-right: 430px;
+        margin-bottom: 100px;
+    }
+}
+
+.home {
+    font-weight: lighter;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.voltar {
+    font-weight: lighter;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.atual {
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ce0000;
+}
+
+#check {
+    display: none;
+}
+
+#icone {
+    left: -40px;
+    cursor: pointer;
+    padding: 45px;
+    position: fixed;
+    top: -49px;
+    z-index: 3;
+}
+
+@media (max-width: 600px) {
+    .elenco_table {
+        background-color: #131313;
+        margin-left: 30%;
+        margin-right: 1%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.elenco_table th {
+    font-family: Arial;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.personages_top {
+    clear: right;
+    width: 100%;
+}
+
+.finally_evangelion_cover {
+    padding: 40px;
+    margin-top: 70px;
+}
+
+.titulo_cover {
+    float: right;
+    font-family: arial;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.id_iframe {
+    height: 500px;
+}
+
+.barra {
+    background-color: #333333;
+    height: 2000px;
+    width: 300px;
+    position: absolute;
+    transition: all 0.2s linear;
+    left: -300px;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.link {
+    background-color: #494950;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    transition: 0.1s linear;
+    color: #ffff;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover {
+    background-color: #ce0000;
+}
+
+#check:checked~.barra {
+    z-index: 2;
+    position: fixed;
+    transform: translateX(300px);
+}
+
+#check:checked~.barra nav a .link {
+    position: relative;
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.2s;
+}
+
+.fundo {
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+}
+
+.conteudo {
+    padding-top: 15%;
+}
+
+.titulo_1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+.texto_enredo {
+    font-family: "Lato", sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.texto_personagens {
+    font-family: "Lato", sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.titulo_2 {
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+.infobox,
+infobox infobox_v2 {
+    margin-left: 30vw;
+    height: 0vh;
+}
+
+.infobox_v2 {
+    color: white;
+    position: fixed;
+    background-color: #131313;
+    border-width: 0px 1px 0px 1px;
+    margin-top: 0px;
+}
+
+.personagens_sobre {
+    padding: 50px 30px;
+}
+
+.personagens_sobre h1 {
+    margin-top: 12%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    padding: 36px 40px;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 21%;
+}
+
+.personagem_sobre,
+tr {
+    color: white;
+    table-layout: auto;
+}
+
+.manga h1 {
+    margin-top: 12%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+.sobre_manga {
+    color: white;
+    font-family: "Lato", sans-serif;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.anime h1 {
+    margin-top: 12%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+.sobre_anime {
+    color: white;
+    font-family: "Lato", sans-serif;
+    padding: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.soundtrack h1 {
+    margin-top: 12%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+.lista_eps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lista_eps td {
+    font-size: 25px;
+    background-color: #494950;
+    height: 10px;
+    border: 1px solid white;
+    table-layout: auto;
+}
+
+.lista_eps th {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid white;
+    table-layout: auto;
+}
+
+.hiddenimg {
+    display: none;
+}
+
+.hiddentxt {
+    font-weight: bold;
+    color: white;
+    z-index: 99;
+}
+
+.hiddentxt a {
+    color: white;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.hiddenclick {
+    font-weight: bold;
+    color: #f00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hiddenclick a {
+    color: #f00;
+    text-decoration: none;
+}
+
+.hiddenclick a:visited {
+    color: #f00;
+    text-decoration: none;
+}
+
+.hiddentxt:hover~.hiddenimg {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+.hiddenclickimg {
+    display: none;
+}
+
+.sobre_soundtrack {
+    padding: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+.sobre_soundtrack {
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.container_soundtrack {
+    height: 1025px;
+    padding-top: 95px;
+}

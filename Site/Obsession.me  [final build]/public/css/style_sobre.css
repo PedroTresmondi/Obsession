@@ -17,6 +17,7 @@ html {
 
 .fundo {
     height: 100%;
+    background-size: cover;
 }
 
 .conteudo {
@@ -371,7 +372,6 @@ hr {
 .metade {
     font-family: 'Lato', sans-serif;
     display: flex;
-    height: 800px;
     border-radius: 10px 0 0 10px;
     flex-direction: column;
     flex-wrap: nowrap;

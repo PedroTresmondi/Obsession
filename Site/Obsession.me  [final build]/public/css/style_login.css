@@ -6,6 +6,24 @@ body {
     overflow-x: hidden;
 }
 
+.texto-registro {
+    margin-left: 50%;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    color: white;
+    text-shadow: 0 0 2px #e19a86, 0 0 1.5px #854535, 0 0 1.5px #5c150c;
+    background-color: #000000;
+    opacity: 1;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 700px;
+    text-align: center;
+    transform: translateY(100%);
+    font-size: 20px
+}
+
 @media (max-width: 500px) {
     .logo {
         display: none;

@@ -12,6 +12,10 @@ html {
     overflow-x: hidden;
 }
 
+.fundo {
+    background-size: cover;
+}
+
 .coluna {
     border-radius: 5px;
     background: #492222;
@@ -55,7 +59,7 @@ html {
 .grafico {
     width: 60%;
     height: 35%;
-    border: 1px solid white;
+    border: 1px solid #ce0000;
     background-color: #131313;
     padding-top: 30px;
 }

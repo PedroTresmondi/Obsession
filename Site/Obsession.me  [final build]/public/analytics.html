@@ -48,35 +48,35 @@
 
 <body onload="rank()">
 
+    <div class="fundo" style="background-image: url(./assets/imgs/bgs/indexbacgrounds/REindex.jpg);">
 
-    <div class="coluna">
-        <div class="class_padding"></div>
-        <div class="container_analytics">
-            <h2>Analytics</h2>
-        </div>
-        <div class="conteudo">
-            <div class="texto_analytics">
-                O gráfico representa os cinco personagens principais
-                e seu nível de popularidade através dos usuários cadastrados no site
+        <div class="coluna">
+            <div class="class_padding"></div>
+            <div class="container_analytics">
+                <h2>Analytics</h2>
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="grafico">
-                <canvas id="personagens" style="display: block;width: 403px;height: 226px;" width="403" height="263"
-                    class="chartjs-render-monitor"></canvas>
+            <div class="conteudo">
+                <div class="texto_analytics">
+                    O gráfico representa os cinco personagens principais e seu nível de popularidade através dos usuários cadastrados no site
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="grafico">
+                    <canvas id="personagens" style="display: block;width: 403px;height: 226px;" width="403" height="263" class="chartjs-render-monitor"></canvas>
+                </div>
             </div>
-        </div>
-        </a>
-    </div>
-
-    <div class="personagem_ganhador">
-
-        <div class="foto" style="display: none" >
-
+            </a>
         </div>
 
+        <div class="personagem_ganhador">
 
+            <div class="foto" style="display: none">
+
+            </div>
+
+
+        </div>
     </div>
 
 
@@ -85,14 +85,15 @@
 
 
 
-</body>
+
 
 
 <footer class="page-footer">
     <div class="flex-container" id="container-footer">
         <div id="contact1">
             <h3>Localização</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2873451596247!2d-46.66380268499543!3d-23.55812128468448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2b063f663%3A0xc567c0d16d0bc582!2sBandtec%20Digital%20School!5e0!3m2!1spt-BR!2sbr!4v1632715586932!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2873451596247!2d-46.66380268499543!3d-23.55812128468448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2b063f663%3A0xc567c0d16d0bc582!2sBandtec%20Digital%20School!5e0!3m2!1spt-BR!2sbr!4v1632715586932!5m2!1spt-BR!2sbr"
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div id="contact">
@@ -123,7 +124,7 @@
             body: JSON.stringify({
 
             })
-        }).then(function (resposta) {
+        }).then(function(resposta) {
             console.log("ESTOU NO THEN DO entrar()!")
 
             if (resposta.ok) {
@@ -150,7 +151,7 @@
                 });
             }
 
-        }).catch(function (erro) {
+        }).catch(function(erro) {
             console.log(erro);
         })
 
@@ -205,7 +206,7 @@
                 responsive: true,
 
                 legend: {
-             
+
                     display: false
                 },
                 title: {
@@ -239,8 +240,4 @@
 
 
     setTimeout(() => graficop(), 2000);
-
-
-
-
 </script>
