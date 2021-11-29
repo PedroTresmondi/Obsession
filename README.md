@@ -1,2 +1,41 @@
 # Obsession
 projeto pessoal site Obsession.me
+
+
+
+
+Justificativa do Projeto
+    A justificativa desse projeto é: Despertar o interesse da obra Neon Genesis Evangelion nas pessoas que não conhecem. Ao mesmo 
+tempo que explica a parte emocional de o por quê do desse tema, focando na parte emocional da obra, essa conexão emocional, com um tipo de audiência
+que não consome esse tipo de conteúdo é o jeito mais fácil de fazer alguém se interessar por algo novo.
+
+Objetivos gerais
+    -Transmitir a influência que a obra teve na minha vida, ao longo dos anos;
+    -Criar interesse em pessoas que nunca ouviram falar do anime;
+    -Contar um pouco do enredo do anime, junto da sua história.
+
+
+Produtos e Principais requisitos
+    Requisito(s):Atingir pessoas novas.
+    Transmitir influências que o tema teve na minha vida.
+
+Pré-Requisito
+    Fazer um Website conectado com o banco de dados através da API fornecida e criar um tipo de analytic com os dados do tema
+
+
+
+Aceitação
+    Site Finalizado, Responsivo e conctado na API
+
+
+Restrições
+    O processo deve ser feito em 2 semanas Entrega em (29/11/21)
+
+Premissas:
+    O site deverá estar responsivo em todas as plataformas;
+    Todas Wikis Atualizadas;
+    Interpretação de dados na página de alanytics;
+  
+
+
+
