@@ -2,8 +2,9 @@
 projeto pessoal site Obsession.me (Faculdade)
 <br><br><br>
 
-<p>
-    <
+
+    
+<p align="center"><img width="30%" src="https://i.pinimg.com/originals/9d/8e/fa/9d8efa6843eeef3b5700f35ecfe3eef5.gif" height=100%/></p>
 
 
 Justificativa do Projeto
