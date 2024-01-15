@@ -1,4 +1,4 @@
-# Obsession
+# Obsession.me  - Primeiro site que eu fiz
 projeto pessoal site Obsession.me (Faculdade)
 <br><br><br>
 
